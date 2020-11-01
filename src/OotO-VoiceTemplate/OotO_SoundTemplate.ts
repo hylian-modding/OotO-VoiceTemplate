@@ -21,6 +21,8 @@ class OotO_SoundTemplate implements IPlugin {
     SH A1, 0x0088(A0)
     */
     nop: Buffer = Buffer.from('3C048060A4850088', 'hex');
+    currentSoundID: number = 0;
+    currentSound!: sf.Sound;
     
     getRandomInt(min: number, max: number) {
         min = Math.ceil(min);
@@ -66,16 +68,23 @@ class OotO_SoundTemplate implements IPlugin {
         }
 
         if (this.core.link.current_sound_id > 0) {
-            if (this.sounds.has(this.core.link.current_sound_id)) {
+            if (this.sounds.has(this.core.link.current_sound_id) && this.currentSoundID !== this.core.link.current_sound_id) {
                 let random = this.getRandomInt(0, this.sounds.get(this.core.link.current_sound_id)!.length - 1);
                 let sound: sf.Sound = this.sounds.get(this.core.link.current_sound_id)![random];
                 sound.position = this.core.link.position;
                 sound.minDistance = 250.0
+
+                if(this.currentSound !== undefined) {
+                    this.currentSound.stop();
+                }
+                
                 sound.play();
+                this.currentSound = sound;
             } else {
                 this.ModLoader.logger.error("Missing sound id " + this.core.link.current_sound_id.toString(16));
             }
         }
+        this.currentSoundID = this.core.link.current_sound_id;
 
         this.sounds.forEach((sound: sf.Sound[], key: number)=>{
             for (let i = 0; i < sound.length; i++){
