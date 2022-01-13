@@ -16,10 +16,11 @@
       "@sound/*": [
         "./build/emulator/*"
       ],
-      "@OotO-VoiceTemplate/*": [
-        "./src/OotO-VoiceTemplate/*"
+      "@Z64O_VoiceTemplate/*": [
+        "./src/Z64O_VoiceTemplate/*"
       ]
-    }
+    },
+    "noImplicitAny": false
   },
   "include": [
     "src/**/*.ts",
@@ -27,13 +28,13 @@
     "mods/**/*.ts",
     "cores/**/*.ts",
     "bin/paker.ts",
-    "tools/**/*.ts",
-    "src/modloader/consoles/mupen/resources/test.js"
+    "tools/**/*.ts"
   ],
   "exclude": [
     "node_modules",
     "API",
     "build.ts",
-    "build"
+    "build",
+    "cores"
   ]
 }

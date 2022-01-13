@@ -1,13 +1,13 @@
 {
-  "name": "OotO_SoundTemplate",
+  "name": "Z64O_VoiceTemplate",
   "version": "1.0.0",
   "description": "",
-  "main": "OotO_SoundTemplate.js",
+  "main": "Z64O_VoiceTemplate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "core": "OcarinaofTime"
+  "core": "Z64Lib"
 }

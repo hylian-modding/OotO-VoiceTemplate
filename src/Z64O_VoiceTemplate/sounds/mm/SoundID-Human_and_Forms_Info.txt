@@ -1,0 +1,102 @@
+Human:
+
+682A - Breath after Drink / Surfacing from Water
+682B - Death Grunts
+682C - Falling into Lava / Taken by Wallmaster
+682D - Grabbed by Redead / Grabbed by Wallmaster / Sucked in by Big Octo / Eaten by Woodfall Temple Flower
+682E - Shiver and Sneeze in Cold Places
+682F - (Might be Unused, I couldn't find a Hot Place) Sweating in Hot Places
+683A - Cringing from Fall Damage
+6820 - Attack Yell / Rolling
+6821 - Long Attack Yell
+6822 - Epona / Hookshot
+6823 - Grab Ledge / Healed by a GF
+6824 - Climb Ledge / Bonk into Wall
+6825 - Hurt by Enemy
+6826 - Frozen in Ice
+6827 - Short Fall Scream / Fall into Grotto
+6828 - Long Fall Scream / General Screams / Hit by Fire
+6829 - Low HP
+6831 - Yawning
+6834 - Jumping / Bottle Swing / Emptying Bottle
+6836 - Surprised Gasp / Shocked Gasp / Sigh of Relief
+6838 - Pushing Block
+683E - Falling off horse intro
+6840 - waking up from fall
+6841 - grabbing horse
+6848 - Sliding / Fall into Hole to Termina
+68E0 - pig mask sounds
+
+Deku Link
+6880 - Deku Flower pop out
+6881 - UNUSED Long Attack Yell
+6882 - UNUSED Epona / Hookshot
+6883 - Grab Ledge / sliding / Healed by a GF
+6884 - Climb Ledge
+6885 - Hurt by Enemy 
+6886 - Frozen in Ice
+6887 - Short Fall Scream / Fall into Grotto
+6888 - Long Fall Scream / General Screams
+688A - UNUSED Surfacing from Water
+688B - Death Grunts
+688C - Falling into Lava / Taken by Wallmaster
+688D - Grabbed by Redead / Grabbed by Wallmaster / Sucked in by Big Octo
+6894 - jumping / water hops / Bottle Swing / Emptying Bottle
+6898 - Pushing Block
+689A - Cringing from Fall Damage
+
+Goron Link:
+68C0 - Goron Punch / Roll Jump
+68C1 - UNUSED Pick Up Silver Rock
+68C2 - UNUSED Epona / Hookshot
+68C3 - Sliding / Healed by GF
+68C4 - Bonk into Wall
+68C5 - Hurt by Enemy
+68C6 - Frozen in Ice
+68C7 - Short Fall Scream / Fall into Grotto
+68C8 - Long Fall Scream / General Screams
+68CA - Breath after Drink
+68CB - Death Grunts
+68CC - Falling into Lava / Taken by Wallmaster
+68CD - Grabbed by Redead / Grabbed by Wallmaster / Sucked in by Big Octo / Eaten by Woodfall Temple Flower
+68D4 - Bottle Swipe / Emptying Bottle
+68D8 - Push Block
+68DA - Cringing from Fall Damage
+
+Zora Link:
+68A0 - Zora Slash and Kick
+68A1 - Zora Jumpslash
+68A3 - Grab Ledge / Sliding / Healed by a GF
+68A4 - Climb Ledge /Bonk into Wall
+68A5 - Hurt by Enemy
+68A6 - Frozen in Ice
+68A7 - Short Fall Scream / Fall into Grotto
+68A8 - Long Fall Scream / General Screams
+68A9 - NEVER PLAYS Low HP
+68AA - Breath after Drink / Surfacing from Water
+68AB - Death Grunts
+68AC - Falling into Lava / Taken by Wallmaster
+68AD - Grabbed by Redead / Grabbed by Wallmaster / Sucked in by Big Octo / Eaten by Woodfall Temple Flower
+68B4 - Jumping / Bottle Swing / Emptying Bottle
+68B8 - Push Block
+68BA - Cringing from Fall Damage
+
+Fierce Deity Link:
+6800 - Attack Yell / Rolling
+6801 - Long Attack Yell
+6803 - Sliding / Healed by a GF
+6804 - Climb Ledge / Bonk into Wall
+6805 - Hurt by Enemy
+6806 - Frozen in Ice
+6807 - Short Fall Scream / Fall into Grotto
+6808 - Long Fall Scream / General Screams / Hit by Fire
+6809 - Low HP
+680A - Breath after Drink / Surfacing from Water
+680B - Death Grunts
+680C - Falling into Lava / Taken by Wallmaster
+680D - Grabbed by Redead / Grabbed by Wallmaster / Sucked in by Big Octo / Eaten by Woodfall Temple Flower
+680E - Shiver and Sneeze in Cold Places
+6811 - Yawning
+6814 - Jumping / Bottle Swing / Emptying Bottle
+6818 - Pushing Block
+681A - Cringing from Fall Damage

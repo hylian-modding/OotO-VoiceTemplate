@@ -1,5 +1,5 @@
 {
-  "name": "OotO-VoiceTemplate",
+  "name": "Z64O_VoiceTemplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hylian-modding/OotO-VoiceTemplate.git"
+    "url": "git+https://github.com/hylian-modding/Z64O_VoiceTemplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hylian-modding/OotO-VoiceTemplate/issues"
+    "url": "https://github.com/hylian-modding/Z64O_VoiceTemplate/issues"
   },
-  "homepage": "https://github.com/hylian-modding/OotO-VoiceTemplate#readme"
+  "homepage": "https://github.com/hylian-modding/Z64O_VoiceTemplate#readme"
 }
