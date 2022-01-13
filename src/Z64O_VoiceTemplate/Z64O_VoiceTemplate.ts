@@ -33,8 +33,8 @@ class Z64O_VoiceTemplate implements IPlugin {
         let directories: string[] = [];
         getAllSubFolders(this.sound_folder, directories);
 
-        Object.keys(directories).forEach((key: string)=> {
-            if(fs.lstatSync(directories[key]).isDirectory()) {
+        Object.keys(directories).forEach((key: string) => {
+            if (fs.lstatSync(directories[key]).isDirectory()) {
                 let sound_folder = directories[key];
                 fs.readdirSync(sound_folder).forEach((file: string) => {
                     let f: string = path.resolve(sound_folder, file);
@@ -42,8 +42,18 @@ class Z64O_VoiceTemplate implements IPlugin {
                     if (fs.lstatSync(f).isDirectory()) {
                         this.rawSounds[id] = [];
                         fs.readdirSync(f).forEach((sound: string) => {
-                            let s: string = path.resolve(f, sound);
-                            this.rawSounds[id].push(zlib.deflateSync(fs.readFileSync(s)));
+                            if (
+                                path.extname(sound) === ".ogg" ||
+                                path.extname(sound) === ".wav" ||
+                                path.extname(sound) === ".mp3" ||
+                                path.extname(sound) === ".flac"
+                            ) {
+                                let s: string = path.resolve(f, sound);
+                                this.rawSounds[id].push(zlib.deflateSync(fs.readFileSync(s)));
+                            }
+                            else {
+                                //console.log(`Found file of wrong type! ${sound}`);
+                            }
                         });
                     }
                 });
