@@ -36,40 +36,21 @@ class Z64O_VoiceTemplate implements IPlugin {
         Object.keys(directories).forEach((key: string) => {
             if (fs.lstatSync(directories[key]).isDirectory()) {
                 let sound_folder = directories[key];
+                let id: number = parseInt(path.parse(sound_folder).name.split("-")[0].trim(), 16);
+                this.rawSounds[id] = [];
                 fs.readdirSync(sound_folder).forEach((file: string) => {
-                    let f: string = path.resolve(sound_folder, file);
-                    let id: number = parseInt(path.parse(file).name.split("-")[0].trim(), 16);
-                    if (fs.lstatSync(f).isDirectory()) {
-                        this.rawSounds[id] = [];
-                        fs.readdirSync(f).forEach((sound: string) => {
-                            if (
-                                path.extname(sound) === ".ogg" ||
-                                path.extname(sound) === ".wav" ||
-                                path.extname(sound) === ".mp3" ||
-                                path.extname(sound) === ".flac"
-                            ) {
-                                let s: string = path.resolve(f, sound);
-                                this.rawSounds[id].push(zlib.deflateSync(fs.readFileSync(s)));
-                            }
-                            else {
-                                //console.log(`Found file of wrong type! ${sound}`);
-                            }
-                        });
+                    let sound: string = path.resolve(sound_folder, file);
+                    if (
+                        path.extname(sound) === ".ogg" ||
+                        path.extname(sound) === ".wav" ||
+                        path.extname(sound) === ".mp3" ||
+                        path.extname(sound) === ".flac"
+                    ) {
+                        this.rawSounds[id].push(zlib.deflateSync(fs.readFileSync(sound)));
                     }
                 });
             }
         });
-        /* fs.readdirSync(this.sound_folder).forEach((file: string) => {
-            let f: string = path.resolve(this.sound_folder, file);
-            let id: number = parseInt(path.parse(file).name.split("-")[0].trim(), 16);
-            if (fs.lstatSync(f).isDirectory()) {
-                this.rawSounds[id] = [];
-                fs.readdirSync(f).forEach((sound: string) => {
-                    let s: string = path.resolve(f, sound);
-                    this.rawSounds[id].push(zlib.deflateSync(fs.readFileSync(s)));
-                });
-            }
-        }); */
         bus.emit(Z64OnlineEvents.ON_LOAD_SOUND_PACK, { id: (this as any)['metadata']["name"], data: this.rawSounds });
     }
 
